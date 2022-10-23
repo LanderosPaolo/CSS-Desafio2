@@ -21,7 +21,7 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 10% 1fr;
+    grid-template-columns: 1fr 9fr;
     grid-template-areas: 
         'header header'
         'bar items'
