@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+/* ubicando contenidos dentro de la grilla */
+.header {
+    grid-area: header;
+}
+
+.aside-bar {
+    grid-area: bar;
+}
+
+.grid-items {
+    grid-area: items;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    grid-template-areas: 
+        'header header'
+        'bar items'
+        'footer footer';
+}
+/* personalizando header */
+.header {
+    background-color: #25527b;
+    text-align: center;
+    color: #fff;
+}
+
+/* Personalizando aside-bar */
+.aside-bar{
+    background-color: #e7e7e7;
+}
+
+.bar-items, .direction {
+    display: flex;
+    flex-direction: column;
+}
+
+.direction a {
+    padding: 10px 0 0 10px;
+}
+
+.direction a {
+    text-decoration: none;
+    color: #75798e;
+}
+
+.direction a:hover {
+    color: #303239;
+}
+
+/* Personalizando contenedores de imgs e info */
+.grid-items {
+    background-color: #e7e7e7;
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px 10px;
+    margin: 10px 0;
+}
+
+.grid-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+.price {
+    text-align: center;
+}
+
+.grid-card img {
+    width: 18rem;
+}
+
+.grid-card .fix {
+    height: 72.5%;
+}
+
+.grid-card .button {
+    width: 100%;
+    background-color: #081521;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid-card .button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Personalizando footer */
+.footer {
+    background-color: #25527b;
+    text-align: center;
+    color: #fff;
+    font-size: large;
+}
